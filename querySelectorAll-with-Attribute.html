@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> javascript </title>
+</head>
+<body>
+<h1> Hello </h1>
+
+<p class="para" data="my data"> Paragraph </p>
+<p class="para" data="my data"> Paragraph 2 </p>
+<p class="para" data="my data"> Paragraph 3 </p>
+<p class="para" data="my data"> Paragraph  4</p>
+<p class="para" paradata23="my data 2"> Paragraph 2 hh</p>
+<p id="show"> Paragraph 2 </p>
+<p> Paragraph 3 </p>
+<p class="show"> Paragraph 4 <span class="spanclass"> <em class="emclass"> Em Tag </em> span tag</span> </p>
+<p class="show"> Paragraph 5 <span class="spanclass"> <em class="emclass"> Em Tag </em> span tag</span> </p>
+<p class="show disp"> para 4 <span class="spanclass"> <em class="emclass"> Em Tag </em> span tag</span> </p>
+
+
+
+<script type="text/javascript">
+	var result = document.querySelectorAll("p[data='my data']"); // ye List return karata hai  es line se saare h1 return kr dega us, wo list 0 index se start hoti hai
+	document.write(result);
+	console.log(result);	
+
+	var result2 = document.querySelector("p[paradata23='my data 2']"); // ye single return karata hai
+	document.write(result2);
+	console.log(result2);
+
+
+
+
+</script>
+
+</body>
+</html>

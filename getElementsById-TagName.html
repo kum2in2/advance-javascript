@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> javascript </title>
+</head>
+<body>
+
+<p id="show">
+	<span>Manoj Kumar</span>
+	<span>Manoj Kumar</span>
+	<span>Manoj Kumar</span>
+	<em>em Tag</em>
+	<b>Bold</b>
+	paragraph 1
+</p>
+<p> paragraph 2</p>
+
+<script type="text/javascript">
+	var  result = document.getElementById('show');
+	var getspan = result.getElementsByTagName("span");
+	// var getspan = result.getElementsByTagName("*");   //All tag ke liye
+	// var getspan = document.getElementById('show').getElementsByTagName("span"); 
+	document.write(getspan);
+	console.log(getspan);
+
+	var  result2 = document.getElementsByTagName('p')[0];  //getElementsByTagName  ye fuction ek list return karata hai wo list o index se start hoti hai
+	var  result3 = document.getElementsByTagName('p')[1];
+	document.write(result2);
+	document.write(result3);
+	console.log(result2);
+	console.log(result3);
+</script>
+
+</body>
+</html>

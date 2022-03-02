@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> javascript </title>
+</head>
+<body>
+
+<p id="show">
+	<span>Manoj Kumar</span>
+	<span>Manoj Kumar</span>
+	<span>Manoj Kumar</span>
+	<em>em Tag</em>
+	<b>Bold</b>
+</p>
+<p> paragraph 2 </p>
+<p> paragraph 3 </p>
+<p> paragraph 4 </p>
+
+<script type="text/javascript">
+	var  len = document.getElementsByTagName('p').length;
+	
+	console.log(len);
+	for(i=0; i < len; i++)
+	{
+		var result = document.getElementsByTagName("p")[i];
+		document.write(result + "<br>");
+		console.log(result);
+	}
+	// var getspan = result.getElementsByTagName("*");   //All tag ke liye
+	// var getspan = document.getElementById('show').getElementsByTagName("span"); 
+	// document.write(getspan);
+	// console.log(getspan);
+</script>
+
+</body>
+</html>

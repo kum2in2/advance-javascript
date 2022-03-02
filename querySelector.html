@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> javascript </title>
+</head>
+<body>
+<h1> Hello </h1>
+<h1> Hello 2</h1>
+<h2> Hello 3</h2>
+
+<p class="para"> Paragraf </p>
+<p id="show">
+	<span>Manoj Kumar</span>
+	<span>Manoj Kumar</span>
+	<span>Manoj Kumar</span>
+	<em>em Tag</em>
+	<b>Bold</b>
+</p>
+<p id="show"> paragraph 2 </p>
+<p> paragraph 3 </p>
+<p class="show"> paragraph 4 <span class="spanclass"> <em class="emclass"> Em Tag </em> span tag</span> </p>
+
+<p class="show disp"> paragraph 4 <span class="spanclass"> <em class="emclass"> Em Tag </em> span tag</span> </p>
+
+<script type="text/javascript">
+	var result = document.querySelector("h1"); // jo pahala P Tag mil jayega wo return ho jayega
+	document.write(result);
+	console.log(result);	
+
+	var result2 = document.querySelector("h2");
+	document.write(result2);
+	console.log(result2);
+
+
+	var result3 = document.querySelector("p");
+	document.write(result3);
+	console.log(result3);
+
+
+	var result4 = document.querySelector("#show");
+	document.write(result4);
+	console.log(result4);
+
+
+	var result5 = document.querySelector(".show .spanclass em");
+	document.write(result5);
+	console.log(result5);
+
+	var result6 = document.querySelector(".show.disp");
+	document.write(result6);
+	console.log(result6);
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> javascript </title>
+</head>
+<body>
+
+<p id="show">
+	<span>Manoj Kumar</span>
+	<span>Manoj Kumar</span>
+	<span>Manoj Kumar</span>
+	<em>em Tag</em>
+	<b>Bold</b>
+</p>
+
+<script type="text/javascript">
+	var  result = document.getElementById('show');
+	var getspan = result.getElementsByTagName("span");  //getElementsByTagName  - ye fuction list return karata hai
+	var len = getspan.length;
+	console.log(len);
+	// var getspan = result.getElementsByTagName("*");   //All tag ke liye
+	// var getspan = document.getElementById('show').getElementsByTagName("span"); 
+	document.write(getspan);
+	console.log(getspan);
+</script>
+
+</body>
+</html>
